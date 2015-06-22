@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ButtonTest</string>
+    <string name="button_share">Share</string>
+    <string name="button_teach">Teach</string>
+    <string name="button_learn_more">Learn More</string>
     <string name="action_settings">Settings</string>
 </resources>
