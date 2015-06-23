@@ -7,23 +7,11 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
     <Button
-        android:text="@string/button_learn_more"
-        android:id="@+id/button_learn_more"
+        android:text="@string/button_click_inner_class"
+        android:id="@+id/button_click_inner_class"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:onClick="handleClick" />
+        android:layout_width="match_parent" />
 
-    <Button
-        android:text="@string/button_teach"
-        android:id="@+id/button_teach"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:onClick="handleClick" />
 
-    <Button
-        android:id="@+id/button_share"
-        android:text="@string/button_share"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>

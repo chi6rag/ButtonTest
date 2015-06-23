@@ -7,48 +7,24 @@ import android.view.View;
 import android.widget.Button;
 import android.view.View.OnClickListener;
 
-public class MainActivity extends Activity implements OnClickListener{
-    Button button_learn_more;
-    Button button_share;
+public class MainActivity extends Activity{
+    Button button_click_inner_class;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button_learn_more = (Button) findViewById(R.id.button_learn_more);
-        button_learn_more.setOnClickListener(this);
-        button_share = (Button) findViewById(R.id.button_share);
-        button_share.setOnClickListener(this);
+        button_click_inner_class = (Button) findViewById(R.id.button_click_inner_class);
+        button_click_inner_class.setOnClickListener(new ButtonActivity());
     }
 
-    public void onClick(View view){
-        switch(view.getId()){
-            case R.id.button_learn_more:
-                Log.i("chi6rag", "Learn More button was clicked");
-                break;
-            case R.id.button_teach:
-                Log.i("chi6rag", "Teach button was clicked");
-                break;
-            case R.id.button_share:
-                Log.i("chi6rag", "Teach button was clicked");
-                break;
-            default:
-                Log.e("chi6rag", "Unidentified button clicked");
-                break;
+    public class ButtonActivity implements OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            Log.d("chi6rag", "Clicked Button: " + v.getId());
         }
+
     }
 
-    public void handleClick(View view){
-        switch(view.getId()){
-            case R.id.button_learn_more:
-                Log.i("chi6rag", "Learn More button was clicked");
-                break;
-            case R.id.button_teach:
-                Log.i("chi6rag", "Teach button was clicked");
-                break;
-            default:
-                Log.e("chi6rag", "Unidentified button clicked");
-                break;
-        }
-    }
 }
