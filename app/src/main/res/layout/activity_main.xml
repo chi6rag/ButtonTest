@@ -12,6 +12,16 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent" />
 
+    <Button
+        android:text="@string/button_click_anonymous_inner_class_1"
+        android:id="@+id/button_click_anonymous_inner_class_1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
 
+    <Button
+        android:text="@string/button_click_anonymous_inner_class_2"
+        android:id="@+id/button_click_anonymous_inner_class_2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
 
 </LinearLayout>
